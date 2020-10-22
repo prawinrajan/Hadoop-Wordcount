@@ -4,7 +4,7 @@
 step by step instructions:
  1. open eclipse IDE
  2. create a new java project. 
- <img src="https://github.com/prawinrajan/Hadoop-Wordcount/blob/master/screenshot/create_java_project.png" height="300px" width="700px">
+ <img src="https://github.com/prawinrajan/Hadoop-Wordcount/blob/master/screenshot/create_java_project.png" height="400px" width="700px">
  
  3. right click the project folder select <b> "Build Path" -> "Configure Path"</b>.
  4. include Hadoop jar files from $HADOOP_HOME/share/hadoop/mapreduce <i>(Note:$HADOOP_HOME=YOUR HADOOP FILES LOCATION).</i>
