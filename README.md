@@ -17,16 +17,17 @@ step by step instructions:
  ## Hadoop commands
  1. type start-all.sh to start all hadoop daemon. 
  2. check JPS stauts.
- 3. create Dirctor in hadoop by using the following command.
+ 3. create Dirctor in hadoop by using the following command.<br>
  <code>hdfs dfs -mkdir -p /YOURDIRECTORYNAME</code>
- 4. Command to Copy your localfile to HDFS.
- <code>SYNTAX: hdfs dfs -put /LOCALPATH /HADOOPPATH</code>
+ 4. Command to Copy your localfile to HDFS. <br>
+ <code>SYNTAX: hdfs dfs -put /LOCALPATH /HADOOPPATH</code> <br>
  <code> hdfs dfs -put /root/eclipse-workspace/WCFile.txt /wordcount/WCFile.txt</code>
- 5. Now go to Hadoop Dashboard to view your files.
- URL: http://localhost:50070.
+ 5. Now go to Hadoop Dashboard to view your files.URL: http://localhost:50070.
  6.Here click utilise path. you can check your file stored location.
- 7. To run wordcount program type the following command.
- <code> SYNTAX: hadoop jar YOURJARFILE YOUR_JAVA_FILE_CLASS_NAME(which has the main function)  TEXT_FILE_PATH(stored in hdfs folder) OUTPUT_FILE_NAME</code>
+ 7. To run wordcount program type the following command. <br>
+ 
+ <code> SYNTAX: hadoop jar YOURJARFILE YOUR_JAVA_FILE_CLASS_NAME(which has the main function)  TEXT_FILE_PATH(stored in hdfs folder) OUTPUT_FILE_NAME</code> <br>
  <code> hadoop jar WordCount.jar WCDriver hdfs://localhost:9000/wordcount/WCFile.txt WCOutput</code>
- 8. To view the result of the WordCountFile
+ 
+ 8. To view the result of the WordCountFile. <br>
  <code> hadoop fs -cat WCOutput/part-00000 </code>
