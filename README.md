@@ -25,12 +25,12 @@ step by step instructions:
  ## Hadoop commands
  1. type <i>start-all.sh</i> to start all hadoop daemons. 
  2. check JPS (Java Virtual Machine Process Status Tool) stauts.
- <img src="https://github.com/prawinrajan/Hadoop-Wordcount/blob/master/screenshot/JPS_STATUS.png" height="400px" width="700px"> 
+ <img src="https://github.com/prawinrajan/Hadoop-Wordcount/blob/master/screenshot/JPS_STATUS.png"> 
  3. create Dirctory in hadoop by using the following command.<br>
- <code>hdfs dfs -mkdir -p /YOURDIRECTORYNAME</code>
+ <code>hdfs dfs -mkdir -p /YOURDIRECTORYNAME</code> <br>
  4. Command to Copy your localfiles to HDFS. <br>
  <code>SYNTAX: hdfs dfs -put /LOCALPATH /HADOOPPATH</code> <br>
- <code> hdfs dfs -put /root/eclipse-workspace/WCFile.txt /wordcount/WCFile.txt</code>
+ <code> hdfs dfs -put /root/eclipse-workspace/WCFile.txt /wordcount/WCFile.txt</code><br>
  5. Now go to Hadoop Dashboard.URL: http://localhost:50070.
  <img src="https://github.com/prawinrajan/Hadoop-Wordcount/blob/master/screenshot/Hadoop_Home_page.png" height="400px" width="700px">
  
