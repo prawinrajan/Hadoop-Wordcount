@@ -10,12 +10,12 @@ step by step instructions:
  6. insert the <a href="https://github.com/prawinrajan/Hadoop-Wordcount/blob/master/WCDriver.java">code</a> into WCDriver file.
  7. insert the <a href="https://github.com/prawinrajan/Hadoop-Wordcount/blob/master/WCMapper.java">code</a>  into WCMapper file.
  8. insert the <a href="https://github.com/prawinrajan/Hadoop-Wordcount/blob/master/WCReducer.java">code</a>  into WCReducer file.
- 9. right click the project folder. and click <b> "export" </b> option.
- 10. <b>under java select JAR</b> then click next. select the location to store JAR fie and specify the Name of the JAR file (eg. wordcount.jar).
+ 9. right click the project folder. and click <b> "Export" </b> option.
+ 10. <b> Under java select JAR</b> then click next. select the location to store JAR fie and specify the Name of the JAR file (eg. wordcount.jar).
  11. open terminal where your JAR file is stored. 
  
  ## Hadoop commands
- 1. type <i>start-all.sh</i> to start all hadoop daemon. 
+ 1. type <i>start-all.sh</i> to start all hadoop daemons. 
  2. check JPS (Java Virtual Machine Process Status Tool) stauts.
  3. create Dirctory in hadoop by using the following command.<br>
  <code>hdfs dfs -mkdir -p /YOURDIRECTORYNAME</code>
@@ -29,4 +29,4 @@ step by step instructions:
  <code> Example: hadoop jar WordCount.jar WCDriver hdfs://localhost:9000/wordcount/WCFile.txt WCOutput</code>
  8. To view the result of the WordCountFile. <br>
  <code>Example: hadoop fs -cat WCOutput/part-00000 </code>
- 9. to stop hadoop, run <i>stop-all.sh</i>.
+ 9. To stop all hadoop daemons, run <i>stop-all.sh</i>.
